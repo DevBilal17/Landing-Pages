@@ -3,17 +3,19 @@ import {DESTINATIONS} from '../../data/destination'
 
 const Popular = () => {
   return (
-    <div>
-      <h2>Popular Destinations</h2>
-      <div>
+    <div className='container mx-auto px-3 py-10'>
+      <h2 className='text-2xl font-bold text-[#161414]'>Popular Destinations</h2>
+      <div className='mt-12 flex gap-8'>
         {
             DESTINATIONS.map((item,index)=>(
-                <div key={item.id}>
-                    <div>
-                        <img src={item.image} alt={item.name} />
+                <div key={item.id} className='flex flex-col gap-3 w-full'>
+                    <div className='w-full h-[180px] rounded-3xl overflow-hidden'>
+                        <img src={item.image} alt={item.name} className='w-full h-full object-cover object-center' />
                     </div>
-                    <h3>{item.name}</h3>
-                    <p>{item.location}</p>
+                    <div>
+                      <h3 className='text-[#161414] text-lg'>{item.name}</h3>
+                    <p className='text-sm text-[#979797]'>{item.location}</p>
+                    </div>
                 </div>
             ))
         }
