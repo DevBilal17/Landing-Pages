@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div 
     style={{ backgroundImage: `url(${heroImg})` }}
-    className={`w-full min-h-screen bg-cover`} >
+    className={`w-full min-h-screen bg-cover bg-center`} >
         <div>
             <h1>Discover the most engaging places</h1>
             <button><CiGlobe />Discover on 3D Globe</button>
