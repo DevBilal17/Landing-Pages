@@ -2,6 +2,7 @@ import React from 'react'
 import profileImg from "../../assets/me.jpeg"
 const Navbar = () => {
   return (
+    // #030406
     <nav className='container mx-auto'>
       <div>
         <h2>2rism</h2>
