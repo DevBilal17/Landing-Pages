@@ -5,13 +5,13 @@ import { RiUserLine } from "react-icons/ri";
 import { FaRegComment } from "react-icons/fa";
 const Tips = () => {
   return (
-    <div>
-      <div>
-        <h2>Travel Tips and Advice</h2>
+    <div  className='container mx-auto px-3 py-10'>
+      <div className='flex justify-between'>
+        <h2 className='text-2xl font-bold text-[#161414]'>Travel Tips and Advice</h2>
         <button>View all</button>
       </div>
 
-      <div>
+      <div className='mt-12 flex gap-8'>
         {
             TIPS.map((item,index)=>(
                 <div key={item.id}>
