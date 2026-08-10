@@ -11,7 +11,7 @@ const Tips = () => {
         <button>View all</button>
       </div>
 
-      <div className='mt-12 flex gap-8'>
+      <div className='mt-12 grid grid-cols-2 gap-8'>
         {
             TIPS.map((item,index)=>(
                 <div key={item.id}>

@@ -7,17 +7,17 @@ const Hotels = () => {
   return (
     <div className='container mx-auto px-3 py-10'>
       <h2 className='text-2xl font-bold text-[#161414]'>Hotels and Restaurants</h2>
-      <div className='mt-12 flex gap-8'>
+      <div className='mt-12 grid grid-cols-4 gap-8'>
         {
             HOTELS.map((item,index)=>(
                 <div key={item.id}>
-                    <div>
-                        <img src={item.image} alt={item.name} />                     
+                    <div className='max-h-95 h-full rounded-3xl overflow-hidden'>
+                        <img src={item.image} alt={item.name} className='h-full w-full object-cover object-center' />                     
                     </div>
-                    <div>
-                        <h3>{item.name}</h3>
-                        <div>
-                            <p>
+                    <div className='mt-3'>
+                        <h3 className='text-lg text-[#161414]'>{item.name}</h3>
+                        <div className='mt-1 flex items-center justify-between'>
+                            <p className='flex items-center gap-1 text-sm text-[#979797]'>
                                 <CiLocationOn/>
                                 {item.location}
                             </p>
