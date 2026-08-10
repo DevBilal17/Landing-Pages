@@ -5,7 +5,7 @@ const Popular = () => {
   return (
     <div className='container mx-auto px-3 py-10'>
       <h2 className='text-2xl font-bold text-[#161414]'>Popular Destinations</h2>
-      <div className='mt-12 flex gap-8'>
+      <div className='mt-12 grid grid-cols-6 gap-8'>
         {
             DESTINATIONS.map((item,index)=>(
                 <div key={item.id} className='flex flex-col gap-3 w-full'>
