@@ -15,7 +15,7 @@ const Hotels = () => {
                         <img src={item.image} alt={item.name} className='h-full w-full object-cover object-center' />                     
                     </div>
                     <div className='mt-3'>
-                        <h3 className='text-lg text-[#161414]'>{item.name}</h3>
+                        <h3 className='text-lg text-[#161414] font-medium'>{item.name}</h3>
                         <div className='mt-1 flex items-center justify-between'>
                             <p className='flex items-center gap-1 text-sm text-[#979797]'>
                                 <CiLocationOn/>
