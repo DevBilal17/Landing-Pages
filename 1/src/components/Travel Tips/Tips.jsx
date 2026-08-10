@@ -13,17 +13,17 @@ const Tips = () => {
         <button className="p-2.5 flex items-center border border-[#7B61FF] rounded-xl text-[#7B61FF] gap-1 bg-[#F6F4FF] cursor-pointer">View all <FaArrowRight/></button>
       </div>
 
-      <div className="mt-12 grid grid-cols-2 gap-8">
+      <div className="mt-12 grid sm:grid-cols-2 grid-cols-1 gap-8">
         {TIPS.map((item, index) => (
-          <div key={item.id} className="flex gap-8">
-            <div className="h-95 w-79 shrink-0 rounded-3xl overflow-hidden">
+          <div key={item.id} className="flex xl:flex-row flex-col gap-8">
+            <div className="sm:h-95 h-60 xl:w-79 shrink-0 rounded-3xl overflow-hidden">
               <img
                 src={item.image}
                 alt={item.title}
                 className="h-full w-full object-cover object-center"
               />
             </div>
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between gap-3">
             <div>
                   <h3 className="text-xl text-[#161414] font-bold">{item.title}</h3>
               <p className="mt-4 text-[#979797]">{item.desc}</p>
