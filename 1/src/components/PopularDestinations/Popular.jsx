@@ -10,7 +10,7 @@ const Popular = () => {
             DESTINATIONS.map((item,index)=>(
                 <div key={item.id} className='flex flex-col gap-3 w-full'>
                     <div className='w-full h-[180px] rounded-3xl overflow-hidden'>
-                        <img src={item.image} alt={item.name} className='w-full h-full object-cover object-center' />
+                        <img src={item.image} alt={item.name} className='w-full h-full object-cover object-center transform transition duration-150 hover:scale-105' />
                     </div>
                     <div>
                       <h3 className='text-[#161414] text-lg'>{item.name}</h3>
