@@ -12,8 +12,8 @@ const Hero = () => {
     style={{ backgroundImage: `url(${heroImg})` }}
     className={`w-full min-h-screen bg-cover bg-center py-8 pb-16 `} >
         <div className='min-h-133.5 h-full  text-white flex items-center justify-center flex-col gap-7'>
-            <h1 className='text-[clamp(48px,5vw,64px)] font-medium '>Discover the most engaging places</h1>
-            <button className='flex items-center gap-2 bg-[#7B61FF] p-6 rounded-xl text-lg hover:cursor-pointer hover:bg-[#7B61FF]/70 transition'><CiGlobe size={20}/>Discover on 3D Globe</button>
+            <h1 className='text-[clamp(48px,5vw,64px)] font-medium text-center'>Discover the most engaging places</h1>
+            <button className='flex items-center gap-2 bg-[#7B61FF] md:p-6 p-4 rounded-xl md:text-lg  hover:cursor-pointer hover:bg-[#7B61FF]/70 transition'><CiGlobe size={20}/>Discover on 3D Globe</button>
         </div>
         <div className='flex bg-white  mx-auto p-4 rounded-xl items-center justify-between gap-7 max-w-285 w-full'>
             <div className='flex items-center gap-2'>

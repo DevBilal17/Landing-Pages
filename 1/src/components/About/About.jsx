@@ -9,7 +9,7 @@ const About = () => {
         <p className='text-[#5B5B5B]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
         <button className="p-2.5 w-fit flex items-center border border-[#7B61FF] rounded-xl text-[#7B61FF] gap-1 bg-[#F6F4FF] cursor-pointer">Read more <FaArrowRight/></button>
       </div>
-      <div className='md:h-[488px] h-80 rounded-xl overflow-hidden'>
+      <div className='md:h-122 h-80 rounded-xl overflow-hidden'>
         <img src={aboutImg} alt={"About Image"}  className='h-full w-full object-cover object-center'/>
       </div>
     </div>

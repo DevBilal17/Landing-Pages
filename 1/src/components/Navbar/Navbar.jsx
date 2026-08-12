@@ -9,7 +9,7 @@ const Navbar = () => {
           <img src="/favicon.svg" alt="" className="-mt-4  object-contain"/>
         </div>
 
-        <ul className="flex items-center space-x-12">
+        <ul className="lg:flex hidden items-center space-x-12">
           <li className="text-white/70 transition hover:text-white cursor-pointer">home</li>
           <li className="text-white/70 transition hover:text-white cursor-pointer">hotels</li>
           <li className="text-white/70 transition hover:text-white cursor-pointer">restaurants</li>
